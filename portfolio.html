@@ -17,15 +17,21 @@
 
   <section>
     <h2>ผลงานที่ผ่านมา</h2>
-    <div class="portfolio-item">
-      <h3>ระบบจัดการลา Mentalkids</h3>
-      <p>ระบบจัดการวันลาออนไลน์ รองรับพนักงาน full-time, part-time และ staff</p>
-    </div>
+    <div class="portfolio-item" onclick="openModal('img1.jpg')">
+  <h3>ระบบจัดการลา Mentalkids</h3>
+  <p>ระบบจัดการวันลาออนไลน์ รองรับพนักงาน full-time, part-time และ staff</p>
+</div>
 
-    <div class="portfolio-item">
-      <h3>ระบบคอร์สอบรมออนไลน์</h3>
-      <p>ระบบคอร์สเรียนออนไลน์ พร้อมระบบลงทะเบียนและอัปโหลดไฟล์คอร์ส</p>
-    </div>
+<div class="portfolio-item" onclick="openModal('img2.jpg')">
+  <h3>ระบบคอร์สอบรมออนไลน์</h3>
+  <p>ระบบคอร์สเรียนออนไลน์ พร้อมระบบลงทะเบียนและอัปโหลดไฟล์คอร์ส</p>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
   </section>
 
   <footer>
